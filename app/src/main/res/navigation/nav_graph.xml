@@ -2,12 +2,25 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph">
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentHome">
 
     <fragment
-        android:id="@+id/fragment_home"
+        android:id="@+id/fragmentHome"
         android:name="com.example.grupob_materialdesign.HomeFragment"
-        android:label="HomeFragment"
-        tools:layout="@layout/activity_main" />
+        android:label="Home"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/fragmentFragmento"
+        android:name="com.example.grupob_materialdesign.Fragmento"
+        android:label="Fragmento"
+        tools:layout="@layout/fragmento"/>
+
+    <fragment
+        android:id="@+id/fragmentNotifications"
+        android:name="com.example.grupob_materialdesign.NotificationsFragment"
+        android:label="Notifications"
+        tools:layout="@layout/fragment_notifications"/>
 
 </navigation>
